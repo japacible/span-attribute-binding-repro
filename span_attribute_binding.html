@@ -1,0 +1,44 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<dom-module id="span-attribute-binding">
+  <link rel="import" type="css" href="span_attribute_binding.css">
+  <template>
+    <div>
+      <span>[[helloWorldText_]]</span>
+    </div>
+    <div>
+      <span class="foo">[[helloWorldText_]]</span>
+    </div>
+    <div>
+      <span class="foo" on-click="onHelloWorldClick_">[[helloWorldText_]]</span>
+    </div>
+    <div>
+      <span><span>[[helloWorldText_]]</span></span>
+    </div>
+    <div>
+      <span class="foo"><span>[[helloWorldText_]]</span></span>
+    </div>
+    <div>
+      <span class="foo" on-click="onHelloWorldClick_"><span>[[helloWorldText_]]</span></span>
+    </div>
+    <hr>
+    <div>
+      <span>{{helloWorldText_}}</span>
+    </div>
+    <div>
+      <span class="foo">{{helloWorldText_}}</span>
+    </div>
+    <div>
+      <span class="foo" on-click="onHelloWorldClick_">{{helloWorldText_}}</span>
+    </div>
+    <div>
+      <span><span>{{helloWorldText_}}</span></span>
+    </div>
+    <div>
+      <span class="foo"><span>{{helloWorldText_}}</span></span>
+    </div>
+    <div>
+      <span class="foo" on-click="onHelloWorldClick_"><span>{{helloWorldText_}}</span></span>
+    </div>
+  </template>
+<script src="span_attribute_binding.js"></script>
+</dom-module>
